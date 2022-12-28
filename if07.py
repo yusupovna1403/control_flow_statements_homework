@@ -17,11 +17,13 @@ def main(a):
             return "positive odd number"
         else:
             return "positive even number"
-    else:
+    elif a < 0:
         if a % 2 == 1:
             return "negative odd number"
         else:
             return "negative even number"
+    else:
+        return "the number is zero"
 
 print(main(57))
 print(main(-24))
