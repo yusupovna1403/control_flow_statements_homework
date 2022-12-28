@@ -12,4 +12,16 @@ def main(a):
     Returns:
         string: the message to print
     """
-    return
+    if a > 0:
+        if a % 2 == 1:
+            return "positive odd number"
+        else:
+            return "positive even number"
+    else:
+        if a % 2 == 1:
+            return "negative odd number"
+        else:
+            return "negative even number"
+
+print(main(57))
+print(main(-24))
